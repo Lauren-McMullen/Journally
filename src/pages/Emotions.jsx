@@ -1,9 +1,15 @@
+import Header from "../components/Header"
+import logo from "../images/JournallyLogo.png"
+import MoodChecklist from "../components/MoodChecklist"
+import { useState } from "react"
 
+export default function Emotions(props) {
 
-export default function Emotions(name) {
+    const [mood, setMood]=useState();
+
     return (
         <div>
-            <Header logo={logo} name={name}/>
+            <Header logo={logo} name={props.name}/>
             <h2>How are you feeling?</h2>
             <p>Select one.</p>
             <MoodChecklist mood={setMood}/>

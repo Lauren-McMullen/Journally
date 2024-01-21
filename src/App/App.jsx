@@ -20,12 +20,22 @@ import './style.css'
 import PromptList from '../components/PromptList.jsx'
 
 export default function App() {
+
+    const [mood, setMood]=useState();
+    const [situation, setSituation]=useState();
+    const [promptType, setpromptType]=useState();
+    const [promptList, setPrompts]=useState();
+
   return (
     <div>
       <BrowserRouter>
         <Routes>
           <Route index element={<Welcome name="Journally"/>} />
           <Route path="/welcome" element={<Welcome name="Journally"/>} />
+          <Route path="/extra" element={<Extra name="Journally"/>} />
+          <Route path="/prompttype" element={<PromptType name="Journally"/>} />
+          <Route path="/write" element={<Write name="Journally"/>} />
+          <Route path="/emotions" element={<Emotions mood={setMood} name="Journally"/>} />
         </Routes>
       </BrowserRouter>
     </div>
