@@ -1,9 +1,9 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import logo from "../images/JournallyLogo.png"
+import logo from "../images/JournallyLogoTransparent.png"
 import { useNavigate } from "react-router-dom";
-
+import "./style.css"
 
 
 export default function Welcome(props) {

@@ -7,7 +7,7 @@ body {
   padding: 1rem;
   font-family: system-ui, sans-serif;
   color: rgb(246, 246, 246);
-  background-color: rgb(80, 175, 183);
+  background-color: rgb(255, 255, 255);
   
 }
 
@@ -33,4 +33,8 @@ h1 {
 
 .promptButton:hover {
   filter: drop-shadow();
+}
+
+welcome{
+  background: #FFFF
 }

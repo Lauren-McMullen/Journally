@@ -1,7 +1,7 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Emotions from "./Emotions.jsx"
-import logo from "../images/JournallyLogo.png"
+import logo from "../images/JournallyLogoTransparent.png"
 import PromptList from "../components/PromptList"
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
@@ -15,8 +15,8 @@ import { useLocation } from "react-router-dom"
 export default function promptTypes(props) {
 
     const {state} = useLocation();
-    //console.log(JSON.stringify(state));
-
+    console.log("PT:" + JSON.stringify(state));
+    
     const [promptType, setpromptType]=useState();
     
     const navigate = useNavigate();

@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { useState } from "react"
 
 
-import logo from "../images/JournallyLogo.png"
+import logo from "../images/JournallyLogoTransparent.png"
 import MoodChecklist from "../components/MoodChecklist.jsx"
 import Header from "../components/Header.jsx"
 import SituationChecklist from '../components/SituationChecklist.jsx'
@@ -16,10 +16,10 @@ import Emotions from '../pages/Emotions.jsx'
 import PromptType from '../pages/PromptType.jsx'
 import Write from '../pages/Write.jsx'
 
-import './style.css'
 import PromptList from '../components/PromptList.jsx'
 
 export default function App() {
+  const [mood, setMood]=useState("");
   
   return (
     <div>
@@ -29,8 +29,8 @@ export default function App() {
           <Route path="/welcome" element={<Welcome name="Journally"/>} />
           <Route path="/extra" element={<Extra name="Journally"/>} />
           <Route path="/prompttype" element={<PromptType name="Journally"/>} />
-          <Route path="/write" element={<Write name="Journally"/>} />
-          <Route path="/emotions" element={<Emotions name="Journally"/>} />
+          <Route path="/write" mood={mood} element={<Write name="Journally"/>} />
+          <Route path="/emotions" mood={setMood} element={<Emotions name="Journally"/>} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -2,7 +2,7 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import logo from "../images/JournallyLogo.png"
+import logo from "../images/JournallyLogoTransparent.png"
 import SituationChecklist from "../components/SituationChecklist";
 import { useState } from "react"
 
