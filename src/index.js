@@ -1,12 +1,16 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { App } from './App/App';
+import App from './App/App.jsx';
 
-const root = createRoot(document.getElementById('app'));
+export default function index() {
+  const root = createRoot(document.getElementById('app'))
 
-root.render(
-  <StrictMode>
-    <App name="Journally" />
-  </StrictMode>
-);
+  root.render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+}
+
+index()
