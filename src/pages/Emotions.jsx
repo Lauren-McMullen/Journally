@@ -2,6 +2,9 @@ import Header from "../components/Header"
 import logo from "../images/JournallyLogo.png"
 import MoodChecklist from "../components/MoodChecklist"
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
+
+
 
 export default function Emotions(props) {
 

@@ -15,6 +15,7 @@ import Extra from '../pages/Extra.jsx'
 import Emotions from '../pages/Emotions.jsx'
 import PromptType from '../pages/PromptType.jsx'
 import Write from '../pages/Write.jsx'
+import { useNavigate } from "react-router-dom";
 
 import './style.css'
 import PromptList from '../components/PromptList.jsx'
