@@ -13,7 +13,9 @@ export default function Extra(props) {
 
     return (
         <div>
-            <Header logo={logo} name={props.name}/>
+            <div className="header">
+                <Header logo={logo} />
+            </div>
             <h2>Is there something else on your mind?</h2>
             <p>Select one.</p>
             <SituationChecklist situation={setSituation} />

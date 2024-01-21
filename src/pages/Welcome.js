@@ -9,16 +9,20 @@ import "./style.css"
 export default function Welcome(props) {
     const navigate = useNavigate();
     return (
-        <div className="flex-container">
-            <div className="header"><Header logo={logo} /></div>
-
-            <h1 className="hello">Welcome to Journally</h1>
-            <p className="text">Journalling is a cathartic experience. Journally gives you tailored journalling 
-            prompts based on your current emotions and life challenges. When you are done getting your emotions out, set your thoughts free and watch them drift away!</p>            
-            <button className="button" onClick={() => navigate("/emotions")}>Get Started</button>
-            <Footer/>
-        </div>
-        
+        <div className="master-div">
+            <div className="logo-div">
+                <Header logo={logo} />
+            </div>
+            <div>
+                <h1 className="hello">Welcome to Journally</h1>
+            </div>
+            <div className="text-div">
+                <p className="text">Journalling is a cathartic experience. Journally gives you tailored journalling 
+                prompts based on your current emotions and life challenges. When you are done getting your emotions out, set your thoughts free and watch them drift away!</p>            
+                <button className="button" onClick={() => navigate("/emotions")}>Get Started</button>
+                <Footer/>
+            </div>
+        </div>    
     )
 }
 

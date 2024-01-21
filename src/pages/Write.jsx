@@ -28,14 +28,20 @@ export default function Write(props) {
     //  console.log("PROMPT: " + prompt);
 
     return (
-        <div>
-            <Header logo={logo} name={props.name}/>
-            <h2 className="promptTitle">You picked a {state.promptType.toLowerCase()} for a(n) {state.state.mood} mood</h2>
-            <div className="writingArea"><h3>{prompt}</h3>
-            <div >
-            <JournalPage response={setResponse} />
-            <button className="button" onClick={() =>navigate("\sendoff")}>Send my writing to away!</button></div></div>
-            <Footer/>
+        <div className="master-div ">
+            <div className="logo-div">
+                <Header logo={logo} />
+            </div>
+            <div>
+                <h2 className="promptTitle">Here's your prompt:</h2>
+            </div>
+            <div className="text-div">
+                <div className="writingArea">
+                    <h3>{prompt}</h3>
+                <JournalPage response={setResponse} />
+                <button className="button" id="big-butt" onClick={() =>navigate("\sendoff")}>Send my writing away!</button></div>
+                <Footer/>
+            </div>
 
         </div>
     )

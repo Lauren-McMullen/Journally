@@ -3,22 +3,46 @@ body {
     background-size: cover;
 }
 
-.flex-container {
+.pic-div {
+    display: flex;
+    justify-content: center;
+}
+
+.master-div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
 
 }
 
+.help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
 .header {
-    transform: rotate(30.293deg) scale(50%) translateX(2em);
+    transform: rotate(30.293deg) scale(50%);
+    position: absolute;
+    left: -130;
+    top: -160;
+    
 }
 
 .footer {
     background-color: aliceblue;
     padding: 12px 12px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 
 }
 
@@ -30,6 +54,9 @@ body {
     font-weight: 400;
     line-height: 130%; /* 166.4px */
     letter-spacing: -3.84px;
+
+    position: absolute;
+    top: 140;
 }
 
 #homeButton {
@@ -57,6 +84,22 @@ body {
 
 }
 
+.text-div {
+    position: absolute;
+    top: 300;
+    width: 100%;
+}
+
+.sending {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
 
 
 #startButton {
@@ -68,6 +111,11 @@ body {
     max-width: fit-content;
     border-radius: 8px;
 
+}
+
+.final-butt{
+    display: flex;
+    justify-content: center;
 }
 
 #startButton:hover {
@@ -97,15 +145,22 @@ body {
 }
 
 .button{
+    display: flex;
     background-color: lightblue;
     color: aliceblue;
     padding: 12px 80px;
     border: none;
     font-size: 16px;
-    max-width: fit-content;
+    max-width: 100%;
     border-radius: 8px; 
     margin-bottom: 20px;
     margin-top: 15px;
+    justify-content: center;
+}
+
+#big-butt {
+    scale: 80%;
+    font-size: larger;
 }
 
 .button:hover {

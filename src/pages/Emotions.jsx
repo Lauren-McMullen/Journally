@@ -14,12 +14,18 @@ export default function Emotions(props) {
 
     
     return (
-        <div>
-            <Header logo={logo} name={props.name}/>
-            <h2 className="emotionsTitle">How are you feeling?</h2>
-            <MoodChecklist id="emotionradio" mood={setMood}/>
-            <button className="button" onClick={() => navigate("/prompttype", {state:{mood}})}>Next</button>
-            <Footer/>
+        <div className="master-div">
+            <div className="logo-div">
+                <Header logo={logo} />
+            </div>
+            <div>
+                <h2 className="emotionsTitle">How are you feeling?</h2>
+            </div>
+            <div className="text-div">
+                <MoodChecklist id="emotionradio" mood={setMood}/>
+                <button className="button" onClick={() => navigate("/prompttype", {state:{mood}})}>Next</button>
+                <Footer/>
+            </div>
         </div>
     )
 }
