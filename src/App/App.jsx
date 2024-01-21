@@ -11,8 +11,6 @@ import './style.css'
 
 export const App = ({ name }) => {
 
-  const [mood, setMood]=useState();
-  const [situation, setSituation]=useState();
   
 
   return (
