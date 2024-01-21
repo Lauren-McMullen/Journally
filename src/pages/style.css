@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
 body {
     background-color: #FFFF;
     background-size: cover;
@@ -94,7 +97,7 @@ body {
 
 .hello {
     color: var(--Secondary-500, #1A202C);
-    font-family: "Sansita One";
+    font-family: 'Raleway', sans-serif;
     font-size: 70px;
     font-style: normal;
     font-weight: 400;
@@ -119,7 +122,8 @@ body {
     flex-direction: row;
     max-width: 100%;
     justify-content: center;
-    padding: 20px 10px
+    padding: 20px 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .MoodChecklistSub {
@@ -135,6 +139,7 @@ body {
     top: 300;
     width: 100%;
     margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .sending {
@@ -183,7 +188,7 @@ body {
 
 .text {
     color: var(--Secondary-500, #1A202C);
-    font-family: "Sansita One";
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -224,6 +229,7 @@ body {
 .emotionsTitle {
     display: flex;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     
 }
@@ -231,17 +237,20 @@ body {
 .promptTitle {
     display: flex;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
 }
 
 .promptList {
     display: flex;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
 }
 
 .writingArea{
     display: flex;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
     flex-direction: column;
 }
