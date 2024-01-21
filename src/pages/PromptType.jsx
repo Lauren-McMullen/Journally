@@ -1,11 +1,11 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Emotions from "./Emotions.jsx"
-import logo from "../images/JournallyLogoTransparent.png"
+import logo from "../images/logo.png"
 import PromptList from "../components/PromptList"
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
-import selectPrompts from "../logic.js"
+import selectPrompts from "../Logic.js"
 import { useLocation } from "react-router-dom"
 
 
@@ -31,7 +31,7 @@ export default function promptTypes(props) {
                 Letter prompts will ask you to write a letter to yourself or someone else.
             </p>
             <PromptList promptType={setpromptType}/>
-            <button id="promptButton" onClick={navigate("/write", {state: {promptType, mood}})}>Next</button>
+            <button id="promptButton" onClick={navigate("/write", {state: {promptType, state}})}>Next</button>
             <Footer/>
 
         </div>

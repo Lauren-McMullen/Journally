@@ -2,24 +2,25 @@ import { FC } from 'react'
 import { useState } from "react"
 
 
-import logo from "../images/JournallyLogoTransparent.png"
+import logo from "../images/logo.png"
 import MoodChecklist from "../components/MoodChecklist.jsx"
 import Header from "../components/Header.jsx"
 import SituationChecklist from '../components/SituationChecklist.jsx'
-import selectPrompts from "../logic.js"
+import selectPrompts from "../Logic.js"
 import JournalPage from '../components/JournalPage.jsx'
 
 import { BrowserRouter, Routes, Route} from "react-router-dom"
-import Welcome from '../pages/Welcome.jsx'
+import Welcome from '../pages/Welcome.js'
 import Extra from '../pages/Extra.jsx'
 import Emotions from '../pages/Emotions.jsx'
 import PromptType from '../pages/PromptType.jsx'
 import Write from '../pages/Write.jsx'
 
 import PromptList from '../components/PromptList.jsx'
+import "../pages/style.css"
 
 export default function App() {
-  const [mood, setMood]=useState("");
+  
   
   return (
     <div>
@@ -29,8 +30,8 @@ export default function App() {
           <Route path="/welcome" element={<Welcome name="Journally"/>} />
           <Route path="/extra" element={<Extra name="Journally"/>} />
           <Route path="/prompttype" element={<PromptType name="Journally"/>} />
-          <Route path="/write" mood={mood} element={<Write name="Journally"/>} />
-          <Route path="/emotions" mood={setMood} element={<Emotions name="Journally"/>} />
+          <Route path="/write" element={<Write name="Journally"/>} />
+          <Route path="/emotions" element={<Emotions name="Journally"/>} />
         </Routes>
       </BrowserRouter>
     </div>

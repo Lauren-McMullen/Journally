@@ -1,5 +1,5 @@
 import Header from "../components/Header"
-import logo from "../images/JournallyLogoTransparent.png"
+import logo from "../images/logo.png"
 import Footer from "../components/Footer"
 import MoodChecklist from "../components/MoodChecklist"
 import { useState } from "react"

@@ -2,10 +2,10 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import PromptTypes from "./PromptType"
-import selectPrompts from "../logic.js"
+import selectPrompts from "../Logic.js"
 
 
-import logo from "../images/JournallyLogoTransparent.png"
+import logo from "../images/logo.png"
 import { useState } from "react"
 import JournalPage from "../components/JournalPage";
 import { useNavigate } from 'react-router-dom';
@@ -19,7 +19,7 @@ export default function Write(props) {
     console.log("STATE: " + JSON.stringify(state))
     console.log("MOOD: " + JSON.stringify(state.state.mood))
     let prompt = selectPrompts(state.promptType, state.state.mood);
-    console.log(prompt);
+    console.log("PROMPT: " + prompt);
 
     return (
         <div>

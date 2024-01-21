@@ -3,13 +3,15 @@ body {
     background-size: cover;
 }
 
-.header {
+.flex-container {
     display: flex;
-    width: 40%;
-    height: 40%;
 }
 
-.text {
+.header {
+    transform: rotate(30.293deg) scale(50%) translate(0%, 0%);
+}
+
+.hello {
     color: var(--Secondary-500, #1A202C);
     font-family: "Sansita One";
     font-size: 70px;
@@ -19,6 +21,12 @@ body {
     letter-spacing: -3.84px;
 }
 
-.paragraph {
-
+.text {
+    color: var(--Secondary-500, #1A202C);
+    font-family: "Sansita One";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+    letter-spacing: -1.2px;
 }
