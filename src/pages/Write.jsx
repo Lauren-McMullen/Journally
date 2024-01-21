@@ -2,7 +2,7 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import PromptTypes from "./PromptType"
-import selectPrompts from "./Logic"
+import selectPrompts from "./Logic.js"
 
 
 import logo from "../images/logo.png"
