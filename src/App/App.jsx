@@ -4,6 +4,7 @@ import { useState } from "react"
 
 import logo from "../images/Quill_With_Ink.png"
 import MoodChecklist from "../components/MoodChecklist.jsx"
+import Header from "../components/Header.jsx"
 
 import './style.css'
 
