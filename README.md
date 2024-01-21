@@ -1,3 +1,1 @@
-# NoteBottle
-
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Lauren-McMullen/NoteBottle)
+This project was completed for the 2024 NWHacks hackathon in Vancouver, BC. Over 24 hours, myself and a team of four learned to use React for the first time while we competed in our first hackathon, in which we built our first web application. The event was an intense learning curve, and we were overthrilled to emerge with a fully compiling project!
