@@ -7,7 +7,7 @@ const root = createRoot(document.getElementById('app'));
 
 root.render(
   <StrictMode>
-    <App name="Journally" prompt="pleasework"/>
+    <App name="Journally"/>
   </StrictMode>
 
 );

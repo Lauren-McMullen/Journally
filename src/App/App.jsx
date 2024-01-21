@@ -4,6 +4,7 @@ import { useState } from "react"
 
 
 import MoodChecklist from "../components/MoodChecklist.jsx"
+import prompts from "./index.js" 
 
 import './style.css'
 
