@@ -1,5 +1,7 @@
 
 import Header from "../components/Header"
+import Footer from "../components/Footer"
+
 import logo from "../images/JournallyLogo.png"
 import SituationChecklist from "../components/SituationChecklist";
 import { useState } from "react"
@@ -16,6 +18,7 @@ export default function Extra(props) {
             <p>Select one.</p>
             <SituationChecklist situation={setSituation} />
             <button id="extrasButton">Next</button>
+            <Footer/>
         </div>
     )
 }

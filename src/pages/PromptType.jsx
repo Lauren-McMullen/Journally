@@ -1,7 +1,11 @@
 import Header from "../components/Header"
+import Footer from "../components/Footer"
+
 import logo from "../images/JournallyLogo.png"
 import PromptList from "../components/PromptList"
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -10,6 +14,9 @@ import { useState } from "react"
 export default function PromptTypes(props) {
 
     const [promptType, setpromptType]=useState();
+    const navigate = useNavigate();
+
+    
 
     return (
         <div>
@@ -20,7 +27,8 @@ export default function PromptTypes(props) {
                 Letter prompts will ask you to write a letter to yourself or someone else.
             </p>
             <PromptList promptType={setpromptType}/>
-            <button id="promptButton">Next</button>
+            <button id="promptButton" onClick={() => navigate("/write")}>Next</button>
+            <Footer/>
 
         </div>
     )

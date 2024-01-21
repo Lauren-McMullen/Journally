@@ -1,4 +1,6 @@
 import Header from "../components/Header"
+import Footer from "../components/Footer"
+
 import logo from "../images/JournallyLogo.png"
 import { useNavigate } from "react-router-dom";
 
@@ -13,6 +15,8 @@ export default function Welcome(props) {
             <p>Journalling is a cathartic experience. Journally gives you tailored journalling 
             prompts based on your current emotions and life challenges. When you are done getting your emotions out, set your thoughts free and watch them drift away!</p>
             <button id="startButton" onClick={() => navigate("/emotions")}>Get Started</button>
+            <Footer/>
+
         </div>
     )
 }
