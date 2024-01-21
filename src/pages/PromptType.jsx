@@ -15,7 +15,7 @@ import { useLocation } from "react-router-dom"
 export default function promptTypes(props) {
 
     const {state} = useLocation();
-    console.log("PT:" + JSON.stringify(state));
+    //console.log("PT:" + JSON.stringify(state));
     
     const [promptType, setpromptType]=useState();
     
@@ -31,7 +31,7 @@ export default function promptTypes(props) {
                 Letter prompts will ask you to write a letter to yourself or someone else.
             </p>
             <PromptList promptType={setpromptType}/>
-            <button id="promptButton" onClick={navigate("/write", {state: {promptType, state}})}>Next</button>
+            <button id="promptButton" onClick={navigate("/write", {state: {promptType, mood}})}>Next</button>
             <Footer/>
 
         </div>

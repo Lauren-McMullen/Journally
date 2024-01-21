@@ -15,9 +15,11 @@ import { useLocation } from "react-router-dom"
 
 export default function Write(props) {
     const {state} = useLocation();
-    console.log(JSON.stringify(state))
-    let prompt = selectPrompts(state.promptType, state.mood);
-    console.log(JSON.stringify(prompt));
+    console.log("PROMPT TYPE: " + JSON.stringify(state.promptType))
+    console.log("STATE: " + JSON.stringify(state))
+    console.log("MOOD: " + JSON.stringify(state.state.mood))
+    let prompt = selectPrompts(state.promptType, state.state.mood);
+    console.log(prompt);
 
     return (
         <div>
