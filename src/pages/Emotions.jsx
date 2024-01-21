@@ -10,6 +10,8 @@ import { useNavigate } from 'react-router-dom';
 export default function Emotions(props) {
     const [mood, setMood]=useState();
     const navigate = useNavigate();
+
+    
     return (
         <div>
             <Header logo={logo} name={props.name}/>

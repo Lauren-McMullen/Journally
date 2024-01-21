@@ -13,12 +13,15 @@ import selectPrompts from "../logic.js"
 export default function promptTypes(props) {
 
     const [promptType, setpromptType]=useState();
-    var promptList= "";
+    
     const navigate = useNavigate();
+
+
+    
 
     function getPrompts() {
         navigate("/write");
-        promptList= selectPrompts(promptType, Emotions.mood);
+        let prompt = selectPrompts(promptType, Emotions.mood);
     }    
 
     return (

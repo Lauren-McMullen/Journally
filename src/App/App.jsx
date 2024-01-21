@@ -15,12 +15,12 @@ import Extra from '../pages/Extra.jsx'
 import Emotions from '../pages/Emotions.jsx'
 import PromptType from '../pages/PromptType.jsx'
 import Write from '../pages/Write.jsx'
-import { useNavigate } from "react-router-dom";
 
 import './style.css'
 import PromptList from '../components/PromptList.jsx'
 
 export default function App() {
+  
   return (
     <div>
       <BrowserRouter>
@@ -28,7 +28,7 @@ export default function App() {
           <Route index element={<Welcome name="Journally"/>} />
           <Route path="/welcome" element={<Welcome name="Journally"/>} />
           <Route path="/extra" element={<Extra name="Journally"/>} />
-          <Route path="/prompttype" element={<PromptType  name="Journally"/>} />
+          <Route path="/prompttype" element={<PromptType name="Journally"/>} />
           <Route path="/write" element={<Write name="Journally"/>} />
           <Route path="/emotions" element={<Emotions name="Journally"/>} />
         </Routes>
