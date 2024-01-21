@@ -14,16 +14,19 @@ export const App = ({ name }) => {
   const [mood, setMood]=useState();
   const [situation, setSituation]=useState();
   
+
   return (
     <div>
       <Header logo={logo} name={name}/>
-      <h2>How are you feeling today? (Please select one)</h2>
+      <p>Journally gives you tailored journalling 
+        prompts based on your current emotions and life challenges.</p>
+      <h2>How are you feeling today?</h2>
       <MoodChecklist mood={setMood}/>
       <p>You picked: {mood}</p>
-      <h2>What else is on your mind? (Please select one)</h2>
+      <h2>What else is on your mind?</h2>
       <SituationChecklist situation={setSituation} />
       <p>You picked: {situation}</p>
-      <button>Get Journally Prompts</button>
+      <button className="promptButton">Get Journally Prompts</button>
     </div>
   );
 };

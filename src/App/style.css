@@ -20,4 +20,17 @@ h1 {
   display: flex;
 }
 
+.promptButton {
+  border: none;
+  color: white;
+  background-color: blueviolet;
+  padding: 5px 8px;
+  border-radius: 8px;
+
+}
+
+.promptButton:hover {
+  filter: drop-shadow();
+}
+
 
