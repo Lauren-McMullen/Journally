@@ -1,10 +1,16 @@
 import Header from "../components/Header"
 import logo from "../images/JournallyLogo.png"
+import PromptList from "../components/PromptList"
+import { useState } from "react"
+
 
 
 
 
 export default function PromptTypes(props) {
+
+    const [promptType, setpromptType]=useState();
+
     return (
         <div>
             <Header logo={logo} name={props.name}/>
