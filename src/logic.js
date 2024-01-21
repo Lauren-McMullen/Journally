@@ -15,70 +15,70 @@ const data = {
 
 export default function selectPrompts(promptType, emotion) {
 
-    if (promptType === JOURNAL_PROMPT) {
-        if (emotion == SAD) {
+    if (promptType === "Journal Prompt") {
+        if (emotion == "sad") {
             return data.J0
-        } else if (emotion === HAPPY) {
+        } else if (emotion === "happy") {
             return data.J1
-        } else if (emotion === ANGRY) {
+        } else if (emotion === "angry") {
             return data.J0
-        } else if (emotion === ANXIOUS) {
+        } else if (emotion === "anxious") {
             return data.J3
-        } else if (emotion === CONFUSED) {
+        } else if (emotion === "confused") {
             return data.J1
-        } else if (emotion === ASHAMED) {
+        } else if (emotion === "ashamed") {
             return data.J3
-        } else if (emotion === STRESSED) {
+        } else if (emotion === "stressed") {
             return data.J1
-        } else if (emotion === JEALOUS) {
+        } else if (emotion === "jealous") {
             return data.J3
-        } else if ( emotion === BORED) {
-        return data.J1
+        } else if ( emotion === "bored") {
+            return data.J1
         }
     }
 
 
-    if (promptType === CREATIVE_PROMPT) {
-        if (emotion === SAD) {
+    if (promptType === "Creative Prompt") {
+        if (emotion === "sad") {
             return data.C0
-        } else if (emotion === HAPPY) {
+        } else if (emotion === "happy") {
             return data.C1
-        } else if ( emotion === ANGRY) {
+        } else if ( emotion === "angry") {
             return data.C0
-        } else if (emotion === ANXIOUS) {
+        } else if (emotion === "anxious") {
             return data.C2
-        } else if (emotion === CONFUSED) {
+        } else if (emotion === "confused") {
             return data.C0
-        } else if (emotion === ASHAMED) {
+        } else if (emotion === "ashamed") {
             return data.C2
-        } else if (emotion === STRESSED) {
+        } else if (emotion === "stressed") {
             return data.C0
-        } else if (emotion === JEALOUS) {
+        } else if (emotion === "jealous") {
             return data.C2
-        } else if ( emotion === BORED) {
+        } else if ( emotion === "bored") {
             return data.C1
         }
     }
 
 
-    if (promptType === LETTER_PROMPT) {
-        if (emotion === SAD) {
+    if (promptType === "Letter Prompt") {
+        if (emotion === "sad") {
             return data.L0
-        } else if (emotion === HAPPY) {
+        } else if (emotion === "happy") {
             return data.L1
-        } else if (emotion === ANGRY) {
+        } else if (emotion === "angry") {
             return data.L0
-        } else if (emotion === ANXIOUS) {
+        } else if (emotion === "anxious") {
             return data.L2
-        } else if (emotion === CONFUSED) {
+        } else if (emotion === "confused") {
             return data.L0
-        } else if (emotion === ASHAMED) {
+        } else if (emotion === "ashamed") {
             return data.L2
-        } else if (emotion === STRESSED) {
+        } else if (emotion === "stressed") {
             return data.L1
-        } else if (emotion === JEALOUS) {
+        } else if (emotion === "jealous") {
             return data.L2
-        } else if (emotion === BORED) {
+        } else if (emotion === "bored") {
             return data.L1
         } 
     }  
