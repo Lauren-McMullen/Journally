@@ -6,12 +6,19 @@ import logo from "../images/Quill_With_Ink.png"
 import MoodChecklist from "../components/MoodChecklist.jsx"
 import Header from "../components/Header.jsx"
 import SituationChecklist from '../components/SituationChecklist.jsx'
+import selectPrompts from "../logic.js"
 
 import './style.css'
 
 export const App = ({ name }) => {
 
-  
+  const [mood, setMood]=useState();
+  const [situation, setSituation]=useState();
+  const [promptList, setPrompts]=useState();
+
+  function findPrompts() {
+    setPrompts(selectPrompts(promptList, mood));
+  }
 
   return (
     <div>

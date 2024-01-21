@@ -1,6 +1,6 @@
 import './prompt.js';
 
-function selectPrompts(promptType, emotion) {
+export default function selectPrompts(promptType, emotion) {
     
     if (promptType === "journalPrompts" && emotion === "sad") {
         return journalPrompts[0]
