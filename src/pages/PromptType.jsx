@@ -1,6 +1,10 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import logo from "../images/logo.png"
+import pinkBook from "../images/pinkBook.png"
+import envelope from "../images/Envelope.png"
+import paintbrush from "../images/Paintbrush.png"
+
 import PromptList from "../components/PromptList"
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
@@ -26,7 +30,18 @@ export default function promptTypes(props) {
                 <Header logo={logo} />
             </div>
             <div className="emotionsTitle">
-                <h2 className="promptTitle">Pick the type of prompt you want:</h2>
+                <h2 className="promptTitle">Pick your prompt type:</h2>
+            </div>
+            <div className="bookContainer">
+                <div className="book">
+                    <img src={pinkBook} alt="picture of a pink book"/>
+                </div>
+                <div className="paint">
+                    <img src={paintbrush} alt="picture of a paintbrush"/>
+                </div>
+                <div className="envelope">
+                    <img src={envelope} alt="picture of an envelope"/>
+                </div>
             </div>
             <div className="text-div">
                 <h3>Journal Prompts</h3>

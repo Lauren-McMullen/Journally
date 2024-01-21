@@ -1,4 +1,4 @@
-import sendoff from "../images/placeholder.gif"
+import sendoff from "../images/bottle_moving.gif"
 
 export default function SendoffGif() {
     

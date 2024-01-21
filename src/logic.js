@@ -1,9 +1,7 @@
 
-import "./Options"
-
 const data = {
     "J0":"Beyond sadness and anger, are there other emotions present, such as disappointment, frustration, or fear?",
-    "J1":"What were your expectations for the situation or people involved. Were these expectations realistic, or were they based on assumptions?",
+    "J1":"What personal habits do you wish you had? What could you do to implement these habits?",
     "J2":"How would you speak to a friend going through similar emotions?",
     "C0":"Imagine your emotions as elements of a rainy day such as clouds, raindrops, and thunder. Describe each element and how they contribute to the overall 'weather' of your mood.",
     "C1":"Personify your emotions and engage in a dialogue with them. Ask questions and allow each emotion to express itself through words.",

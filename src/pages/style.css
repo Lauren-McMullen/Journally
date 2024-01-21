@@ -30,6 +30,28 @@ body {
     align-items: center;
 }
 
+
+.book {
+    scale: 40%;
+    position: absolute;
+    left: 1100;
+    top: -25;
+}
+
+.paint {
+    scale: 10%;
+    position: absolute;
+    left: -500;
+    top: -25;
+}
+
+.envelope {
+    scale: 40%;
+    position: absolute;
+    left: 800;
+    top: 200;
+}
+
 .Twofaces{
     display: flex;
     flex-direction: row;
@@ -78,7 +100,7 @@ body {
     font-weight: 400;
     line-height: 130%; /* 166.4px */
     letter-spacing: -3.84px;
-
+    margin-left: 40px;
     position: absolute;
     top: 140;
 }
@@ -112,6 +134,7 @@ body {
     position: absolute;
     top: 300;
     width: 100%;
+    margin-left: 40px;
 }
 
 .sending {
