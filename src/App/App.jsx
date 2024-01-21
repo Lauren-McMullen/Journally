@@ -10,17 +10,20 @@ import SituationChecklist from '../components/SituationChecklist.jsx'
 import './style.css'
 
 export const App = ({ name }) => {
+
+  const [mood, setMood]=useState();
+  const [situation, setSituation]=useState();
+  
   return (
     <div>
       <Header logo={logo} name={name}/>
-      <p>How are you feeling today? (Please select one)</p>
-      <MoodChecklist  sad="Sad" angry="Angry" happy="Happy" anxious="anxious" stressed="Stressed" jealous="Jealous" bored="Bored" 
-      confused="Confused" ashamed="Ashamed" />
-
-      <p>What else is on your mind? (Please select one)</p>
-      <SituationChecklist health="Health" schoolwork="School or Work" family="Family" finances="Finances" 
-      relationships="Relationships" bodyimage="Body Image" />
-      
+      <h2>How are you feeling today? (Please select one)</h2>
+      <MoodChecklist mood={setMood}/>
+      <p>You picked: {mood}</p>
+      <h2>What else is on your mind? (Please select one)</h2>
+      <SituationChecklist situation={setSituation} />
+      <p>You picked: {situation}</p>
+      <button>Get Journally Prompts</button>
     </div>
   );
 };
