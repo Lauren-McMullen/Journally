@@ -21,12 +21,6 @@ export default function Write(props) {
     let prompt = selectPrompts(state.promptType, state.state.mood);
     
 
-
-    //  console.log("PROMPT TYPE: " + JSON.stringify(state.promptType))
-    //  console.log("STATE: " + JSON.stringify(state))
-    //  console.log("MOOD: " + JSON.stringify(state.state.mood))
-    //  console.log("PROMPT: " + prompt);
-
     return (
         <div className="master-div ">
             <div className="logo-div">

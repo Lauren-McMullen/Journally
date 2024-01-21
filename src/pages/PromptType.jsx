@@ -26,7 +26,7 @@ export default function promptTypes(props) {
                 <Header logo={logo} />
             </div>
             <div className="emotionsTitle">
-                <h2 className="promptTitle">Pick the type of prompts you want:</h2>
+                <h2 className="promptTitle">Pick the type of prompt you want:</h2>
             </div>
             <div className="text-div">
                 <h3>Journal Prompts</h3>

@@ -17,16 +17,40 @@ body {
 
 }
 
+.MiddleRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+}
+
 .help{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.Twofaces{
+    display: flex;
+    flex-direction: row;
+    max-height: 80px;
+}
+
+.faces{
+    scale: 25%;
+    max-height: 100px;
+}
+
 .logo-div{
     position: absolute;
     left: 0px;
     top: 0px;
+}
+
+.yBlob{
+    position: absolute;
+    left: 900px;
+    top: -150px;
 }
 
 
@@ -140,8 +164,15 @@ body {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
+    max-width: 60%;
     line-height: 150%; /* 60px */
     letter-spacing: -1.2px;
+}
+
+.frontGraphic{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
 }
 
 .button{
