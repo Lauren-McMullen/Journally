@@ -6,23 +6,21 @@ import PromptList from "../components/PromptList"
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
 import selectPrompts from "../logic.js"
+import { useLocation } from "react-router-dom"
+
 
 
 
 
 export default function promptTypes(props) {
 
+    const {state} = useLocation();
+    //console.log(JSON.stringify(state));
+
     const [promptType, setpromptType]=useState();
     
     const navigate = useNavigate();
-
-
     
-
-    function getPrompts() {
-        navigate("/write");
-        let prompt = selectPrompts(promptType, Emotions.mood);
-    }    
 
     return (
         <div>
@@ -33,7 +31,7 @@ export default function promptTypes(props) {
                 Letter prompts will ask you to write a letter to yourself or someone else.
             </p>
             <PromptList promptType={setpromptType}/>
-            <button id="promptButton" onClick={getPrompts()}>Next</button>
+            <button id="promptButton" onClick={navigate("/write", {state: {promptType, state}})}>Next</button>
             <Footer/>
 
         </div>
