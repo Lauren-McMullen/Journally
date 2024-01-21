@@ -10,7 +10,7 @@ export default function Sendoff(props) {
         <div>
             <Header logo={logo} name={props.name}/>
             <SendoffGif/>
-            <button id="snedoffButton" onClick={() => navigate("/welcome")}>Get more Journally</button>
+            <button className="button" onClick={() => navigate("/welcome")}>Get more Journally</button>
         </div>
     )
 }

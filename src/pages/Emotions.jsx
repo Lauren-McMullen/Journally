@@ -10,16 +10,15 @@ import { useNavigate } from 'react-router-dom';
 export default function Emotions(props) {
     const [mood, setMood]=useState("");
     const navigate = useNavigate();
-    console.log("EMOTIONS:"+ mood);
+    //console.log("EMOTIONS:"+ mood);
 
     
     return (
         <div>
             <Header logo={logo} name={props.name}/>
-            <h2>How are you feeling?</h2>
-            <p>Select one.</p>
-            <MoodChecklist mood={setMood}/>
-            <button id="emotionsButton" onClick={() => navigate("/prompttype", {state:{mood}})}>Next</button>
+            <h2 className="emotionsTitle">How are you feeling?</h2>
+            <MoodChecklist id="emotionradio" mood={setMood}/>
+            <button className="button" onClick={() => navigate("/prompttype", {state:{mood}})}>Next</button>
             <Footer/>
         </div>
     )

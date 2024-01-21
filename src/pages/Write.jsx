@@ -30,10 +30,11 @@ export default function Write(props) {
     return (
         <div>
             <Header logo={logo} name={props.name}/>
-            <h2>You picked a {state.promptType.toLowerCase()} for a(n) {state.state.mood} mood</h2>
-            <h2>{prompt}</h2>
+            <h2 className="promptTitle">You picked a {state.promptType.toLowerCase()} for a(n) {state.state.mood} mood</h2>
+            <div className="writingArea"><h3>{prompt}</h3>
+            <div >
             <JournalPage response={setResponse} />
-            <button className="promptButton" onClick={() =>navigate("\sendoff")}>Send my writing to away!</button>
+            <button className="button" onClick={() =>navigate("\sendoff")}>Send my writing to away!</button></div></div>
             <Footer/>
 
         </div>

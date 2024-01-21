@@ -5,10 +5,21 @@ body {
 
 .flex-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .header {
-    transform: rotate(30.293deg) scale(50%) translate(0%, 0%);
+    transform: rotate(30.293deg) scale(50%) translateX(2em);
+}
+
+.footer {
+    background-color: aliceblue;
+    padding: 12px 12px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .hello {
@@ -21,6 +32,60 @@ body {
     letter-spacing: -3.84px;
 }
 
+#homeButton {
+    background-color: lightblue;
+    color: aliceblue;
+    padding: 12px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.MoodChecklist {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+    padding: 20px 10px
+}
+
+.MoodChecklistSub {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content:space-evenly;
+
+}
+
+
+
+#startButton {
+    background-color: lightblue;
+    color: aliceblue;
+    padding: 12px 80px;
+    border: none;
+    font-size: 16px;
+    max-width: fit-content;
+    border-radius: 8px;
+
+}
+
+#startButton:hover {
+    filter: drop-shadow(10px 10px 4px rgb(0,0,0,0.5));
+}
+
+#homeButton:hover {
+    filter: drop-shadow(10px 10px 4px rgb(0,0,0,0.5));
+}
+
+.radioLabel {
+    font-size: 25px;
+}
+
+.radioButton {
+    margin-right: 200px;
+}
+
 .text {
     color: var(--Secondary-500, #1A202C);
     font-family: "Sansita One";
@@ -29,4 +94,45 @@ body {
     font-weight: 400;
     line-height: 150%; /* 60px */
     letter-spacing: -1.2px;
+}
+
+.button{
+    background-color: lightblue;
+    color: aliceblue;
+    padding: 12px 80px;
+    border: none;
+    font-size: 16px;
+    max-width: fit-content;
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    filter: drop-shadow(10px 10px 4px rgb(0,0,0,0.5));
+}
+
+.emotionsTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+
+.promptTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.promptList {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.writingArea{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

@@ -23,13 +23,20 @@ export default function promptTypes(props) {
     return (
         <div>
             <Header logo={logo} name={props.name}/>
-            <h2>Pick the type of prompts you want:</h2>
-            <p>Journal prompts will ask you to write reflectively, like you might in a diary entry.
+            <h2 className="promptTitle">Pick the type of prompts you want:</h2>
+            <h3>Journal Prompts</h3>
+            <p>Journal prompts will ask you to write reflectively, like you might in a diary entry. 
+            </p>
+            <h3>Creative Prompts</h3>
+            <p>
                 Creative prompts will provide you with a creative writing exercise that will help you engage with you emotions in a creative way.
+            </p>
+            <h3>Letter Prompts</h3>
+            <p>
                 Letter prompts will ask you to write a letter to yourself or someone else.
             </p>
             <PromptList promptType={setpromptType}/>
-            <button id="promptButton" onClick={()=>navigate("/write", {state: {promptType, state}})}>Next</button>
+            <button className="button" onClick={()=>navigate("/write", {state: {promptType, state}})}>Next</button>
             <Footer/>
 
         </div>
